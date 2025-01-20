@@ -2,6 +2,15 @@
 
 Just a PyPi package with code taken and adapted from the official implementation from [microsoft/CodeXGLUE](https://github.com/microsoft/CodeXGLUE/blob/main/Code-Code/code-to-code-trans/CodeBLEU.MD).
 
+Install
+
+```sh
+git clone git@github.com:Pstva/code_bleu.git
+cd code_bleu
+poetry build
+```
+
+
 Usage:
 
 ```python
