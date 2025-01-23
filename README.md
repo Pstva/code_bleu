@@ -7,7 +7,8 @@ Install
 ```sh
 git clone git@github.com:Pstva/code_bleu.git
 cd code_bleu
-poetry build
+poetry build 
+poetry install
 ```
 
 
