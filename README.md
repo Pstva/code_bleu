@@ -5,10 +5,7 @@ Just a PyPi package with code taken and adapted from the official implementation
 Install
 
 ```sh
-git clone git@github.com:Pstva/code_bleu.git
-cd code_bleu
-poetry build 
-poetry install
+pip install git+ssh://git@github.com/Pstva/code_bleu.git
 ```
 
 
