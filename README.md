@@ -5,7 +5,9 @@ Just a PyPi package with code taken and adapted from the official implementation
 Install
 
 ```sh
-pip install git+ssh://git@github.com/Pstva/code_bleu.git
+git clone https://github.com/Pstva/code_bleu.git
+cd code_bleu
+pip install -e .
 ```
 
 
