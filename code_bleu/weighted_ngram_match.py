@@ -433,7 +433,7 @@ class SmoothingFunction:
                     "Consider using lower n-gram order or use "
                     "SmoothingFunction()"
                 ).format(i + 1)
-                warnings.warn(_msg)
+                warnings.warn(_msg, category=UserWarning)
                 # When numerator==0 where denonminator==0 or !=0, the result
                 # for the precision score should be equal to 0 or undefined.
                 # Due to BLEU geometric mean computation in logarithm space,

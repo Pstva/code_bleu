@@ -2,6 +2,7 @@
 # Licensed under the MIT license.
 
 import pdb
+import warnings
 
 import tree_sitter_c_sharp
 import tree_sitter_go
@@ -79,8 +80,9 @@ def corpus_dataflow_match(references, candidates, lang):
                         match_count += 1
                         normalized_cand_dfg.remove(dataflow)
     if total_count == 0:
-        print(
-            "WARNING: There is no reference data-flows extracted from the whole corpus, and the data-flow match score degenerates to 0. Please consider ignoring this score."
+        warnings.warn(
+            "WARNING: There is no reference data-flows extracted from the whole corpus, and the data-flow match score degenerates to 0. Please consider ignoring this score.",
+            category=UserWarning,
         )
         return 0
     score = match_count / total_count
